@@ -1,0 +1,110 @@
+@use "../common/variables";
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  //header top
+  &-top {
+    padding: 7px 0;
+    background: #F8F8F8;
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+  &-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    span {
+      color: var(--accent-color);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+  &-phones {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+    &__label {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1;
+    }
+    &__tel {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+  }
+
+  //header bottom
+  &-bottom {
+    padding: 30px 0;
+    background: #FFF;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05), 0px 4px 25px 0px rgba(0, 0, 0, 0.03);
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+  &-logo {
+    max-width: 162px;
+  }
+  &-menu {
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      li {
+        margin: 0;
+        a {
+          color: var(--main-color);
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 1.4px;
+          text-transform: uppercase;
+          line-height: 1;
+        }
+        &:first-child {
+          padding: 8px 15px;
+          border-radius: 20px;
+          border: 1px solid var(--1, #FF291C);
+          background: rgba(255, 41, 28, 0.10);
+          a {
+            color: var(--accent-color);
+          }
+        }
+      }
+    }
+  }
+  &-feedback {
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    padding: 13px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(121, 126, 133, 0.40);
+    line-height: 1;
+  }
+}
