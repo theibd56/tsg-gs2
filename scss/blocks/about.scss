@@ -1,0 +1,57 @@
+.about {
+  margin-bottom: 240px;
+  &-container {
+    display: flex;
+    gap: 10px;
+  }
+  &-image {
+    min-width: 400px;
+    height: 400px;
+    object-fit: cover;
+    &__small {
+      min-width: 228px;
+      height: 228px;
+      object-fit: cover;
+    }
+  }
+  &-title {
+    text-transform: uppercase;
+  }
+  &-description {
+    max-width: 810px;
+    margin-bottom: 60px;
+    p {
+      color: var(--main-color);
+    }
+  }
+  &-text {
+    display: flex;
+    align-items: flex-end;
+    gap: 70px;
+  }
+  &-list {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      padding-left: 60px;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); /* центрируем диск по вертикали */
+        width: 40px;
+        height: 40px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19.5" stroke="%23FF291C"/><path d="M10 20.5L16.5 27L29.5 14" stroke="%23FF291C"/></svg>');
+        border-radius: 50%;
+      }
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

@@ -152,6 +152,9 @@ p {
   font-style: normal;
   font-weight: 200;
   line-height: normal;
+  strong {
+    font-weight: 700;
+  }
   &:not(:last-child) {
     margin-bottom: 10px;
   }
