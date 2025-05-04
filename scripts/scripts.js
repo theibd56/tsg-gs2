@@ -1,3 +1,7 @@
+import { Mask, MaskInput } from "maska"
+
+new MaskInput("[data-maska]")
+
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
     const main = document.querySelector('main');
