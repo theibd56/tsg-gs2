@@ -30,7 +30,10 @@
   .products {
     margin-bottom: 80px;
     &-slider {
-      padding: 0 10px;
+      padding: 0;
+      .swiper {
+        padding: 0 10px;
+      }
       &__navigate {
         display: none;
       }
