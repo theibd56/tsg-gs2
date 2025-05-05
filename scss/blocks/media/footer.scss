@@ -1,0 +1,16 @@
+@media screen and (max-width: 992px) {
+  .footer {
+    padding: 60px 0 80px;
+    &-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+    &-menu {
+      .menu {
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}

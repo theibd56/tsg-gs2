@@ -15,11 +15,21 @@ document.querySelectorAll('.products-slider').forEach(slider => {
             prevEl: slider.querySelector('.prev'),
             nextEl: slider.querySelector('.next'),
         },
+        autoplay: {
+            delay: 8000
+        },
         breakpoints: {
-            992: {
+            1200: {
                 slidesPerView: 3,
                 spaceBetween: 30,
             },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            300: {
+                slidesPerView: 1,
+            }
         }
     });
 });

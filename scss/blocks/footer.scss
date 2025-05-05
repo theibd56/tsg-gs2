@@ -8,6 +8,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 40px;
   }
   &-menu {
     .menu {
@@ -83,6 +84,7 @@
     border-radius: 8px;
     background: var(--accent-color);
     line-height: 1;
+    text-align: center;
     &:hover {
       color: #fff;
     }

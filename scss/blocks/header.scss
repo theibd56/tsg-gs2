@@ -4,6 +4,7 @@
   position: fixed;
   width: 100%;
   z-index: 99999;
+  background: #fff;
   //header top
   &-top {
     padding: 7px 0;
@@ -75,6 +76,7 @@
       gap: 50px;
       li {
         margin: 0;
+        text-align: center;
         a {
           color: var(--main-color);
           font-size: 14px;
@@ -82,12 +84,14 @@
           letter-spacing: 1.4px;
           text-transform: uppercase;
           line-height: 1;
+          text-align: center;
         }
         &:first-child {
           padding: 8px 15px;
           border-radius: 20px;
           border: 1px solid var(--1, #FF291C);
           background: rgba(255, 41, 28, 0.10);
+          white-space: nowrap;
           a {
             color: var(--accent-color);
           }
@@ -106,5 +110,9 @@
     border-radius: 8px;
     border: 1px solid rgba(121, 126, 133, 0.40);
     line-height: 1;
+    text-align: center;
+    svg {
+      display: none;
+    }
   }
 }

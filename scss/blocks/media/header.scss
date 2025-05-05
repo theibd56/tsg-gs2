@@ -1,0 +1,38 @@
+@media screen and (max-width: 1200px) {
+  .header {
+    &-menu {
+      .menu {
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    &-top {
+      display: none;
+    }
+    &-menu {
+      display: none;
+    }
+    &-feedback {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0;
+      svg {
+        display: block;
+        transform: scale(0.8);
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}
