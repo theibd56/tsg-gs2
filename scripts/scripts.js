@@ -1,6 +1,10 @@
-import { Mask, MaskInput } from "maska"
+import { Mask, MaskInput } from "maska";
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 new MaskInput("[data-maska]")
+
+Fancybox.bind("[data-fancybox]", {});
 
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
