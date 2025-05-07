@@ -1,5 +1,8 @@
 .products {
   margin-bottom: 120px;
+  &-container {
+    position: relative;
+  }
   &-heading {
     max-width: 940px;
     margin-bottom: 40px;
@@ -164,6 +167,28 @@
       color: var(--second-color);
       font-size: 17px;
       font-weight: 300;
+    }
+  }
+
+  &-block {
+    width: 640vw;
+    height: 640px;
+
+    position: absolute;
+    z-index: -1;
+    &-1 {
+      top: -80px;
+      right: 75%;
+    }
+    &-2 {
+      width: 640px;
+      top: 570px;
+      left: 50%;
+      transform: translate(-50%, -0%);
+    }
+    &-3 {
+      top: -90px;
+      left: 74%;
     }
   }
 }

@@ -3,6 +3,8 @@
   &-container {
     display: flex;
     gap: 10px;
+
+    position: relative;
   }
   &-image {
     width: 100%;
@@ -65,5 +67,16 @@
         margin-bottom: 30px;
       }
     }
+  }
+
+  &-block {
+    width: 100vw;
+    height: 1020px;
+
+    position: absolute;
+    z-index: -1;
+
+    top: -320px;
+    right: 24%;
   }
 }

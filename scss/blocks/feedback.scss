@@ -4,6 +4,8 @@
     display: flex;
     align-items: center;
     gap: 100px;
+
+    position: relative;
   }
   &-title {
     color: var(--main-color);
@@ -82,5 +84,15 @@
 
   &-image {
     min-width: 340px;
+  }
+
+  &-block {
+    width: 610vw;
+    height: 593px;
+
+    position: absolute;
+    left: 76%;
+    bottom: -120px;
+    z-index: -1;
   }
 }
